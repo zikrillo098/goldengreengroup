@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Green Group | Industrial Solutions Since 2003</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:#07110e;color:#f3f5f4;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at top left,rgba(201,167,86,.18),transparent 30%),radial-gradient(circle at bottom right,rgba(60,121,90,.15),transparent 25%);pointer-events:none;z-index:-1;}
+a{text-decoration:none;color:inherit;}.container{width:min(1280px,92%);margin:auto;}
+header{position:fixed;width:100%;top:0;left:0;z-index:100;backdrop-filter:blur(18px);background:rgba(5,12,10,.74);border-bottom:1px solid rgba(255,255,255,.08);}
+.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:20px;}.logo{font-size:28px;font-weight:900;letter-spacing:-1px;white-space:nowrap;}.logo span{color:#c8a558;}
+.menu{display:flex;gap:34px;font-size:14px;color:#c9d3cf;}.menu a{transition:.3s}.menu a:hover{color:#d8ba69;}
+.right-nav{display:flex;align-items:center;gap:16px;}.lang-switch{display:flex;gap:8px;}
+.lang-btn{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:12px;color:#fff;cursor:pointer;transition:.3s;font-weight:700;}
+.lang-btn:hover,.lang-btn.active{background:#c8a558;color:#111;}
+.btn{padding:14px 24px;border-radius:999px;background:linear-gradient(135deg,#d8ba69,#9d7a2b);color:#111;font-weight:800;display:inline-flex;align-items:center;justify-content:center;transition:.3s;border:none;cursor:pointer;}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 50px rgba(216,186,105,.25);}.secondary-btn{padding:14px 24px;border-radius:999px;border:1px solid rgba(255,255,255,.14);font-weight:700;transition:.3s;}.secondary-btn:hover{background:rgba(255,255,255,.08);}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:100px;overflow:hidden;}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;}
+.badge{display:inline-flex;padding:10px 18px;border-radius:999px;border:1px solid rgba(200,165,88,.4);background:rgba(200,165,88,.08);color:#d9bc74;font-size:13px;margin-bottom:28px;}
+.hero h1{font-size:clamp(48px,7vw,96px);line-height:.95;letter-spacing:-4px;margin-bottom:28px;max-width:840px;}.hero p{font-size:19px;line-height:1.8;max-width:720px;color:#c6d0cc;margin-bottom:34px;}.hero-actions{display:flex;gap:18px;flex-wrap:wrap;}
+.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:34px;padding:30px;backdrop-filter:blur(24px);box-shadow:0 30px 100px rgba(0,0,0,.4);}.machine-visual{height:460px;border-radius:28px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.02)),linear-gradient(145deg,#13201b,#0a100e);}.machine-visual::before{content:'';position:absolute;width:280px;height:280px;border-radius:50%;border:36px solid rgba(216,186,105,.22);top:60px;right:40px;}.machine-visual::after{content:'';position:absolute;left:-20%;bottom:-10%;width:140%;height:120px;background:linear-gradient(90deg,transparent,rgba(216,186,105,.15),transparent);transform:rotate(-8deg);}.visual-content{position:absolute;bottom:32px;left:32px;right:32px;}.visual-content h3{font-size:32px;margin-bottom:12px;}.visual-content p{font-size:15px;line-height:1.7;color:#d6ddd9;}
+.stats{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}.stat{padding:22px;border-radius:22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);}.stat h4{font-size:32px;color:#d9bc74;margin-bottom:6px;}.stat p{font-size:13px;color:#bcc6c2;line-height:1.5;}
+section{padding:120px 0;}.section-title{margin-bottom:60px;max-width:900px;}.section-title span{color:#d8ba69;font-size:14px;text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:16px;}.section-title h2{font-size:clamp(38px,5vw,72px);line-height:1;letter-spacing:-3px;margin-bottom:24px;}.section-title p{font-size:18px;line-height:1.8;color:#b8c3be;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}.service-card{position:relative;padding:36px;border-radius:32px;background:linear-gradient(180deg,#111b17,#0b1311);border:1px solid rgba(255,255,255,.08);overflow:hidden;transition:.4s;}.service-card:hover{transform:translateY(-8px);border-color:rgba(216,186,105,.4);box-shadow:0 35px 80px rgba(0,0,0,.35);}.service-number{font-size:70px;font-weight:900;opacity:.08;position:absolute;right:24px;top:10px;}.service-icon{font-size:40px;margin-bottom:22px;}.service-card h3{font-size:28px;margin-bottom:16px;}.service-card p{color:#b9c4bf;line-height:1.8;margin-bottom:20px;}.service-card ul{list-style:none;display:grid;gap:12px;}.service-card li{color:#dbe2de;font-size:14px;}.service-card li::before{content:'●';margin-right:10px;color:#d8ba69;}
+.about{background:#f3efe6;color:#111;position:relative;overflow:hidden;}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center;}.about-visual{height:560px;border-radius:38px;background:linear-gradient(135deg,rgba(255,255,255,.4),rgba(255,255,255,.1)),linear-gradient(145deg,#d8ba69,#8a6825);padding:42px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 30px 80px rgba(0,0,0,.18);}.about-visual h2{font-size:92px;line-height:.9;margin-bottom:12px;}.about-visual p{font-size:18px;max-width:340px;line-height:1.7;}.about-content h3{font-size:clamp(38px,5vw,72px);line-height:1;letter-spacing:-3px;margin-bottom:28px;}.about-content p{font-size:18px;line-height:1.9;margin-bottom:20px;color:#34413b;}.timeline{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}.timeline-item{padding:24px;border-radius:22px;background:#fff;box-shadow:0 12px 40px rgba(0,0,0,.08);}.timeline-item strong{display:block;font-size:26px;margin-bottom:10px;color:#8d6a27;}.timeline-item span{color:#5d6763;font-size:14px;line-height:1.6;}
+.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}.industry-card{padding:32px;border-radius:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);transition:.3s;}.industry-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.08);}.industry-card h4{font-size:22px;margin-bottom:12px;}.industry-card p{font-size:14px;line-height:1.7;color:#bfc8c4;}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}.process-card{padding:30px;border-radius:28px;background:linear-gradient(180deg,#121c18,#0b1210);border:1px solid rgba(255,255,255,.08);position:relative;}.process-card span{font-size:58px;font-weight:900;opacity:.1;position:absolute;right:24px;top:10px;}.process-card h3{font-size:24px;margin-bottom:16px;}.process-card p{font-size:15px;line-height:1.8;color:#b7c2bd;}
+.contact-section{background:radial-gradient(circle at top left,rgba(216,186,105,.18),transparent 30%),linear-gradient(135deg,#111b17,#070b0a);}.contact-box{padding:60px;border-radius:40px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:grid;grid-template-columns:1fr .8fr;gap:40px;}.contact-box h2{font-size:clamp(40px,5vw,76px);line-height:1;letter-spacing:-3px;margin-bottom:24px;}.contact-box p{font-size:18px;line-height:1.9;color:#c2cbc7;max-width:700px;}.contact-info{display:flex;flex-direction:column;gap:18px;justify-content:center;}.contact-item{padding:22px;border-radius:24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);}.contact-item strong{display:block;margin-bottom:8px;font-size:14px;color:#d9bc74;text-transform:uppercase;letter-spacing:1px;}.contact-item span{font-size:18px;}
+footer{padding:42px 0;border-top:1px solid rgba(255,255,255,.08);}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#aeb8b4;font-size:14px;}
+@media(max-width:1100px){.hero-grid,.about-grid,.contact-box{grid-template-columns:1fr;}.services-grid,.industries-grid,.process-grid,.timeline{grid-template-columns:1fr 1fr;}.right-nav{gap:10px}.menu{gap:18px}}
+@media(max-width:760px){.menu{display:none;}.nav{height:auto;min-height:78px;flex-wrap:wrap;padding:14px 0}.logo{font-size:22px}.right-nav{width:100%;justify-content:space-between}.hero h1{letter-spacing:-2px;}.services-grid,.industries-grid,.process-grid,.timeline,.stats{grid-template-columns:1fr;}.contact-box{padding:34px;}section{padding:90px 0;}.machine-visual{height:360px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="logo">Golden<span>Green</span>Group</div>
+<nav class="menu">
+<a href="#about" data-i18n="nav_about">About</a>
+<a href="#services" data-i18n="nav_services">Services</a>
+<a href="#industries" data-i18n="nav_industries">Industries</a>
+<a href="#process" data-i18n="nav_process">Process</a>
+<a href="#contact" data-i18n="nav_contact">Contact</a>
+</nav>
+<div class="right-nav">
+<div class="lang-switch">
+<button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+<button class="lang-btn" onclick="setLanguage('ru')">RU</button>
+<button class="lang-btn" onclick="setLanguage('uz')">UZ</button>
+</div>
+<a href="#contact" class="btn" data-i18n="nav_cta">Get Proposal</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge" data-i18n="hero_badge">Industrial Solutions Since 2003</div>
+<h1 data-i18n="hero_title">Global Industrial Supply & Engineering Solutions</h1>
+<p data-i18n="hero_text">Golden Green Group delivers textile machinery, metal products, industrial components, spare parts and technical supply solutions for factories, manufacturers, construction companies and industrial projects across multiple sectors.</p>
+<div class="hero-actions">
+<a href="#services" class="btn" data-i18n="hero_btn1">Explore Services</a>
+<a href="#contact" class="secondary-btn" data-i18n="hero_btn2">Send Inquiry</a>
+</div>
+</div>
+<div class="hero-card">
+<div class="machine-visual">
+<div class="visual-content">
+<h3 data-i18n="visual_title">Textile · Steel · Industrial Components</h3>
+<p data-i18n="visual_text">Reliable supply chain solutions with focus on quality, technical precision and long-term industrial partnerships.</p>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><h4>20+</h4><p data-i18n="stat1">Years of industrial market experience</p></div>
+<div class="stat"><h4>B2B</h4><p data-i18n="stat2">Focused business supply structure</p></div>
+<div class="stat"><h4>360°</h4><p data-i18n="stat3">Complete procurement support cycle</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-title">
+<span data-i18n="services_label">Main Directions</span>
+<h2 data-i18n="services_title">Industrial Supply Services For Modern Business</h2>
+<p data-i18n="services_text">We support industrial enterprises with reliable sourcing, equipment procurement, metal supply and technical solutions adapted to modern manufacturing requirements.</p>
+</div>
+<div class="services-grid">
+<div class="service-card"><div class="service-number">01</div><div class="service-icon">⚙</div><h3 data-i18n="service1_title">Textile Equipment</h3><p data-i18n="service1_text">Supply of textile machinery, production systems, spare parts and industrial equipment for textile and manufacturing facilities.</p><ul><li data-i18n="service1_li1">Production machinery</li><li data-i18n="service1_li2">Industrial spare parts</li><li data-i18n="service1_li3">Technical accessories</li><li data-i18n="service1_li4">Equipment sourcing</li><li data-i18n="service1_li5">Factory supply support</li></ul></div>
+<div class="service-card"><div class="service-number">02</div><div class="service-icon">▰</div><h3 data-i18n="service2_title">Metal Products</h3><p data-i18n="service2_text">Comprehensive supply of metal products and steel materials for industrial, construction and infrastructure projects.</p><ul><li data-i18n="service2_li1">Steel sheets & coils</li><li data-i18n="service2_li2">Pipes & structural materials</li><li data-i18n="service2_li3">Industrial metal components</li><li data-i18n="service2_li4">Custom specifications</li><li data-i18n="service2_li5">Large-volume supply</li></ul></div>
+<div class="service-card"><div class="service-number">03</div><div class="service-icon">◈</div><h3 data-i18n="service3_title">Industrial Components</h3><p data-i18n="service3_text">Supply of industrial materials, accessories and technical components based on drawings, requirements and client specifications.</p><ul><li data-i18n="service3_li1">Technical materials</li><li data-i18n="service3_li2">Custom sourcing</li><li data-i18n="service3_li3">Industrial accessories</li><li data-i18n="service3_li4">Components by drawing</li><li data-i18n="service3_li5">Engineering support</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="container about-grid">
+<div class="about-visual"><h2>2003</h2><p data-i18n="about_visual">Building long-term industrial partnerships and delivering reliable supply solutions for more than two decades.</p></div>
+<div class="about-content">
+<h3 data-i18n="about_title">Trusted Industrial Partner With Global Vision</h3>
+<p data-i18n="about_p1">Golden Green Group has been operating since 2003, supporting businesses with industrial equipment, metal products, components and technical sourcing solutions.</p>
+<p data-i18n="about_p2">Our mission is not only to deliver products, but to understand the technical goals of each client, optimize sourcing strategy and provide efficient industrial procurement solutions.</p>
+<p data-i18n="about_p3">We cooperate with manufacturers, factories, engineering companies, construction businesses, industrial suppliers and corporate clients requiring reliable long-term partnerships.</p>
+<div class="timeline">
+<div class="timeline-item"><strong>2003</strong><span data-i18n="time1">Company foundation and industrial supply operations launch.</span></div>
+<div class="timeline-item"><strong>B2B</strong><span data-i18n="time2">Focused on industrial and manufacturing sector cooperation.</span></div>
+<div class="timeline-item"><strong>Global</strong><span data-i18n="time3">International sourcing and industrial procurement direction.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="industries" id="industries">
+<div class="container">
+<div class="section-title"><span data-i18n="industries_label">Industries</span><h2 data-i18n="industries_title">Sectors We Work With</h2><p data-i18n="industries_text">We provide industrial supply and procurement support for multiple sectors requiring technical precision, reliable logistics and long-term operational stability.</p></div>
+<div class="industries-grid">
+<div class="industry-card"><h4 data-i18n="ind1_title">Textile Manufacturing</h4><p data-i18n="ind1_text">Machinery, components and production support for textile factories and industrial operations.</p></div>
+<div class="industry-card"><h4 data-i18n="ind2_title">Construction</h4><p data-i18n="ind2_text">Metal materials and industrial products for infrastructure and commercial projects.</p></div>
+<div class="industry-card"><h4 data-i18n="ind3_title">Industrial Production</h4><p data-i18n="ind3_text">Supply solutions for production facilities, engineering systems and manufacturing plants.</p></div>
+<div class="industry-card"><h4 data-i18n="ind4_title">Engineering Projects</h4><p data-i18n="ind4_text">Technical procurement and sourcing for specialized industrial requirements.</p></div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="container">
+<div class="section-title"><span data-i18n="process_label">Workflow</span><h2 data-i18n="process_title">How We Work</h2><p data-i18n="process_text">Our process is designed to simplify industrial procurement and provide transparent, structured communication from inquiry to delivery.</p></div>
+<div class="process-grid">
+<div class="process-card"><span>01</span><h3 data-i18n="proc1_title">Inquiry</h3><p data-i18n="proc1_text">Client sends specification, drawing, request list or technical documentation.</p></div>
+<div class="process-card"><span>02</span><h3 data-i18n="proc2_title">Analysis</h3><p data-i18n="proc2_text">We review technical parameters, dimensions, quantities and sourcing requirements.</p></div>
+<div class="process-card"><span>03</span><h3 data-i18n="proc3_title">Sourcing</h3><p data-i18n="proc3_text">Selection of optimal industrial solution based on quality, timing and pricing.</p></div>
+<div class="process-card"><span>04</span><h3 data-i18n="proc4_title">Proposal</h3><p data-i18n="proc4_text">Commercial offer preparation with clear supply, logistics and payment terms.</p></div>
+</div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+<div class="container">
+<div class="contact-box">
+<div><h2 data-i18n="contact_title">Let’s Build Industrial Partnerships</h2><p data-i18n="contact_text">Send your technical request, specification, drawing or procurement inquiry. Our team will prepare a commercial proposal tailored to your industrial requirements.</p></div>
+<div class="contact-info">
+<div class="contact-item"><strong data-i18n="contact_email_label">Email</strong><span>info@goldengreengroup.com</span></div>
+<div class="contact-item"><strong data-i18n="contact_direction_label">Business Direction</strong><span data-i18n="contact_direction">Industrial Equipment · Metal Products · Components</span></div>
+<div class="contact-item"><strong data-i18n="contact_since_label">Working Since</strong><span>2003</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer><div class="container footer-grid"><div data-i18n="footer_left">© 2003–2026 Golden Green Group. All rights reserved.</div><div data-i18n="footer_right">Industrial Supply · Textile Equipment · Steel Solutions</div></div></footer>
+
+<script>
+const translations={
+  en:{
+    nav_about:'About',nav_services:'Services',nav_industries:'Industries',nav_process:'Process',nav_contact:'Contact',nav_cta:'Get Proposal',
+    hero_badge:'Industrial Solutions Since 2003',hero_title:'Global Industrial Supply & Engineering Solutions',hero_text:'Golden Green Group delivers textile machinery, metal products, industrial components, spare parts and technical supply solutions for factories, manufacturers, construction companies and industrial projects across multiple sectors.',hero_btn1:'Explore Services',hero_btn2:'Send Inquiry',
+    visual_title:'Textile · Steel · Industrial Components',visual_text:'Reliable supply chain solutions with focus on quality, technical precision and long-term industrial partnerships.',stat1:'Years of industrial market experience',stat2:'Focused business supply structure',stat3:'Complete procurement support cycle',
+    services_label:'Main Directions',services_title:'Industrial Supply Services For Modern Business',services_text:'We support industrial enterprises with reliable sourcing, equipment procurement, metal supply and technical solutions adapted to modern manufacturing requirements.',
+    service1_title:'Textile Equipment',service1_text:'Supply of textile machinery, production systems, spare parts and industrial equipment for textile and manufacturing facilities.',service1_li1:'Production machinery',service1_li2:'Industrial spare parts',service1_li3:'Technical accessories',service1_li4:'Equipment sourcing',service1_li5:'Factory supply support',
+    service2_title:'Metal Products',service2_text:'Comprehensive supply of metal products and steel materials for industrial, construction and infrastructure projects.',service2_li1:'Steel sheets & coils',service2_li2:'Pipes & structural materials',service2_li3:'Industrial metal components',service2_li4:'Custom specifications',service2_li5:'Large-volume supply',
+    service3_title:'Industrial Components',service3_text:'Supply of industrial materials, accessories and technical components based on drawings, requirements and client specifications.',service3_li1:'Technical materials',service3_li2:'Custom sourcing',service3_li3:'Industrial accessories',service3_li4:'Components by drawing',service3_li5:'Engineering support',
+    about_visual:'Building long-term industrial partnerships and delivering reliable supply solutions for more than two decades.',about_title:'Trusted Industrial Partner With Global Vision',about_p1:'Golden Green Group has been operating since 2003, supporting businesses with industrial equipment, metal products, components and technical sourcing solutions.',about_p2:'Our mission is not only to deliver products, but to understand the technical goals of each client, optimize sourcing strategy and provide efficient industrial procurement solutions.',about_p3:'We cooperate with manufacturers, factories, engineering companies, construction businesses, industrial suppliers and corporate clients requiring reliable long-term partnerships.',time1:'Company foundation and industrial supply operations launch.',time2:'Focused on industrial and manufacturing sector cooperation.',time3:'International sourcing and industrial procurement direction.',
+    industries_label:'Industries',industries_title:'Sectors We Work With',industries_text:'We provide industrial supply and procurement support for multiple sectors requiring technical precision, reliable logistics and long-term operational stability.',ind1_title:'Textile Manufacturing',ind1_text:'Machinery, components and production support for textile factories and industrial operations.',ind2_title:'Construction',ind2_text:'Metal materials and industrial products for infrastructure and commercial projects.',ind3_title:'Industrial Production',ind3_text:'Supply solutions for production facilities, engineering systems and manufacturing plants.',ind4_title:'Engineering Projects',ind4_text:'Technical procurement and sourcing for specialized industrial requirements.',
+    process_label:'Workflow',process_title:'How We Work',process_text:'Our process is designed to simplify industrial procurement and provide transparent, structured communication from inquiry to delivery.',proc1_title:'Inquiry',proc1_text:'Client sends specification, drawing, request list or technical documentation.',proc2_title:'Analysis',proc2_text:'We review technical parameters, dimensions, quantities and sourcing requirements.',proc3_title:'Sourcing',proc3_text:'Selection of optimal industrial solution based on quality, timing and pricing.',proc4_title:'Proposal',proc4_text:'Commercial offer preparation with clear supply, logistics and payment terms.',
+    contact_title:'Let’s Build Industrial Partnerships',contact_text:'Send your technical request, specification, drawing or procurement inquiry. Our team will prepare a commercial proposal tailored to your industrial requirements.',contact_email_label:'Email',contact_direction_label:'Business Direction',contact_direction:'Industrial Equipment · Metal Products · Components',contact_since_label:'Working Since',footer_left:'© 2003–2026 Golden Green Group. All rights reserved.',footer_right:'Industrial Supply · Textile Equipment · Steel Solutions'
+  },
+  ru:{
+    nav_about:'О компании',nav_services:'Услуги',nav_industries:'Отрасли',nav_process:'Процесс',nav_contact:'Контакты',nav_cta:'Получить КП',
+    hero_badge:'Промышленные решения с 2003 года',hero_title:'Международные промышленные поставки и инженерные решения',hero_text:'Golden Green Group поставляет текстильное оборудование, металлопрокат, промышленные комплектующие, запасные части и технические решения для фабрик, производителей, строительных компаний и промышленных проектов.',hero_btn1:'Смотреть услуги',hero_btn2:'Отправить запрос',
+    visual_title:'Текстиль · Металл · Промышленные комплектующие',visual_text:'Надёжные цепочки поставок с фокусом на качество, техническую точность и долгосрочное партнёрство.',stat1:'лет опыта на промышленном рынке',stat2:'B2B-формат работы',stat3:'полный цикл сопровождения закупки',
+    services_label:'Основные направления',services_title:'Промышленные поставки для современного бизнеса',services_text:'Мы помогаем предприятиям с подбором оборудования, металлопроката, комплектующих и технических решений под реальные производственные задачи.',
+    service1_title:'Текстильное оборудование',service1_text:'Поставка текстильного оборудования, производственных систем, запасных частей и промышленной техники для фабрик и производств.',service1_li1:'производственное оборудование',service1_li2:'промышленные запчасти',service1_li3:'технические аксессуары',service1_li4:'подбор оборудования',service1_li5:'снабжение фабрик',
+    service2_title:'Металлопрокат',service2_text:'Комплексная поставка металлопроката и стальных материалов для промышленности, строительства и инфраструктурных проектов.',service2_li1:'листовой металл и рулоны',service2_li2:'трубы и конструкционные материалы',service2_li3:'металлические комплектующие',service2_li4:'позиции по спецификации',service2_li5:'крупные объёмы поставки',
+    service3_title:'Промышленные комплектующие',service3_text:'Поставка материалов, аксессуаров и технических комплектующих по чертежам, требованиям и спецификациям клиента.',service3_li1:'технические материалы',service3_li2:'поиск под заказ',service3_li3:'промышленные аксессуары',service3_li4:'детали по чертежам',service3_li5:'инженерное сопровождение',
+    about_visual:'Более двух десятилетий строим долгосрочные промышленные партнёрства и поставляем надёжные решения.',about_title:'Надёжный промышленный партнёр с международным видением',about_p1:'Golden Green Group работает с 2003 года и помогает бизнесу закрывать потребности в оборудовании, металлопрокате, комплектующих и техническом снабжении.',about_p2:'Наша задача — не просто поставить товар, а понять техническую цель клиента, оптимизировать закупку и предложить эффективное промышленное решение.',about_p3:'Мы сотрудничаем с производителями, фабриками, инженерными компаниями, строительными организациями, поставщиками и корпоративными заказчиками.',time1:'Основание компании и запуск промышленного направления.',time2:'Фокус на промышленный и производственный B2B-сектор.',time3:'Международный поиск и промышленное снабжение.',
+    industries_label:'Отрасли',industries_title:'С кем мы работаем',industries_text:'Мы обеспечиваем промышленное снабжение для отраслей, где важны техническая точность, надёжная логистика и стабильность поставок.',ind1_title:'Текстильное производство',ind1_text:'Оборудование, комплектующие и производственное снабжение для текстильных фабрик.',ind2_title:'Строительство',ind2_text:'Металлопрокат и промышленные материалы для инфраструктурных и коммерческих проектов.',ind3_title:'Промышленное производство',ind3_text:'Решения для заводов, производственных линий и инженерных систем.',ind4_title:'Инженерные проекты',ind4_text:'Технические закупки и поиск решений под специализированные требования.',
+    process_label:'Рабочий процесс',process_title:'Как мы работаем',process_text:'Наш процесс упрощает промышленную закупку и делает коммуникацию понятной от запроса до поставки.',proc1_title:'Запрос',proc1_text:'Клиент отправляет спецификацию, чертёж, список позиций или техническое задание.',proc2_title:'Анализ',proc2_text:'Мы проверяем параметры, размеры, количество, сроки и требования к поставке.',proc3_title:'Подбор',proc3_text:'Подбираем оптимальное решение по качеству, сроку, цене и техническим требованиям.',proc4_title:'Предложение',proc4_text:'Готовим коммерческое предложение с условиями поставки, логистики и оплаты.',
+    contact_title:'Создадим промышленное партнёрство',contact_text:'Отправьте технический запрос, спецификацию, чертёж или заявку на закупку. Наша команда подготовит коммерческое предложение под ваши требования.',contact_email_label:'Email',contact_direction_label:'Направление',contact_direction:'Промышленное оборудование · Металлопрокат · Комплектующие',contact_since_label:'Работаем с',footer_left:'© 2003–2026 Golden Green Group. Все права защищены.',footer_right:'Промышленные поставки · Текстильное оборудование · Металлопрокат'
+  },
+  uz:{
+    nav_about:'Kompaniya',nav_services:'Xizmatlar',nav_industries:'Sohalar',nav_process:'Jarayon',nav_contact:'Aloqa',nav_cta:'Taklif olish',
+    hero_badge:'2003-yildan beri sanoat yechimlari',hero_title:'Global sanoat ta’minoti va injiniring yechimlari',hero_text:'Golden Green Group tekstil uskunalari, metall mahsulotlari, sanoat komponentlari, ehtiyot qismlar va texnik ta’minot yechimlarini fabrikalar, ishlab chiqaruvchilar, qurilish kompaniyalari va sanoat loyihalari uchun yetkazib beradi.',hero_btn1:'Xizmatlarni ko‘rish',hero_btn2:'So‘rov yuborish',
+    visual_title:'Tekstil · Metall · Sanoat komponentlari',visual_text:'Sifat, texnik aniqlik va uzoq muddatli hamkorlikka yo‘naltirilgan ishonchli ta’minot zanjiri.',stat1:'yillik sanoat bozori tajribasi',stat2:'B2B hamkorlik formati',stat3:'xaridni to‘liq qo‘llab-quvvatlash',
+    services_label:'Asosiy yo‘nalishlar',services_title:'Zamonaviy biznes uchun sanoat ta’minoti',services_text:'Biz korxonalarga uskunalar, metall mahsulotlari, komponentlar va texnik yechimlarni tanlashda yordam beramiz.',
+    service1_title:'Tekstil uskunalari',service1_text:'Tekstil fabrikalari va ishlab chiqarish obyektlari uchun uskunalar, tizimlar, ehtiyot qismlar va sanoat texnikasini yetkazib berish.',service1_li1:'ishlab chiqarish uskunalari',service1_li2:'sanoat ehtiyot qismlari',service1_li3:'texnik aksessuarlar',service1_li4:'uskuna tanlash',service1_li5:'fabrika ta’minoti',
+    service2_title:'Metall mahsulotlari',service2_text:'Sanoat, qurilish va infratuzilma loyihalari uchun metall prokat va po‘lat materiallarini kompleks yetkazib berish.',service2_li1:'list metall va rulonlar',service2_li2:'quvurlar va konstruktiv materiallar',service2_li3:'metall komponentlar',service2_li4:'maxsus spetsifikatsiyalar',service2_li5:'katta hajmdagi yetkazib berish',
+    service3_title:'Sanoat komponentlari',service3_text:'Chizmalar, talablar va mijoz spetsifikatsiyalari asosida sanoat materiallari, aksessuarlar va texnik komponentlarni yetkazib berish.',service3_li1:'texnik materiallar',service3_li2:'buyurtma asosida qidirish',service3_li3:'sanoat aksessuarlari',service3_li4:'chizma bo‘yicha detallar',service3_li5:'injiniring ko‘magi',
+    about_visual:'Yigirma yildan ortiq vaqt davomida uzoq muddatli sanoat hamkorliklarini yo‘lga qo‘yib kelamiz.',about_title:'Global qarashga ega ishonchli sanoat hamkori',about_p1:'Golden Green Group 2003-yildan beri uskunalar, metall mahsulotlari, komponentlar va texnik ta’minot bo‘yicha bizneslarga xizmat ko‘rsatadi.',about_p2:'Bizning vazifamiz faqat mahsulot yetkazish emas, balki mijozning texnik maqsadini tushunish va samarali sanoat yechimini taklif qilishdir.',about_p3:'Biz ishlab chiqaruvchilar, fabrikalar, injiniring kompaniyalari, qurilish tashkilotlari va korporativ mijozlar bilan ishlaymiz.',time1:'Kompaniya tashkil etildi va sanoat ta’minoti yo‘nalishi boshlandi.',time2:'Sanoat va ishlab chiqarish B2B sektoriga yo‘naltirilgan.',time3:'Xalqaro qidiruv va sanoat xaridlari yo‘nalishi.',
+    industries_label:'Sohalar',industries_title:'Biz ishlaydigan sohalar',industries_text:'Texnik aniqlik, ishonchli logistika va barqaror ta’minot muhim bo‘lgan sohalar uchun sanoat xaridlarini qo‘llab-quvvatlaymiz.',ind1_title:'Tekstil ishlab chiqarish',ind1_text:'Tekstil fabrikalari uchun uskunalar, komponentlar va ishlab chiqarish ta’minoti.',ind2_title:'Qurilish',ind2_text:'Infratuzilma va tijorat loyihalari uchun metall va sanoat materiallari.',ind3_title:'Sanoat ishlab chiqarishi',ind3_text:'Zavodlar, ishlab chiqarish liniyalari va injiniring tizimlari uchun yechimlar.',ind4_title:'Injiniring loyihalari',ind4_text:'Maxsus sanoat talablariga mos texnik xarid va ta’minot yechimlari.',
+    process_label:'Ish jarayoni',process_title:'Qanday ishlaymiz',process_text:'Bizning jarayonimiz sanoat xaridlarini soddalashtiradi va so‘rovdan yetkazib berishgacha aniq aloqani ta’minlaydi.',proc1_title:'So‘rov',proc1_text:'Mijoz spetsifikatsiya, chizma, pozitsiyalar ro‘yxati yoki texnik topshiriq yuboradi.',proc2_title:'Tahlil',proc2_text:'Biz parametrlar, o‘lchamlar, miqdor, muddat va yetkazib berish talablarini tekshiramiz.',proc3_title:'Tanlash',proc3_text:'Sifat, muddat, narx va texnik talablar asosida optimal yechim tanlanadi.',proc4_title:'Taklif',proc4_text:'Yetkazib berish, logistika va to‘lov shartlari bilan tijorat taklifi tayyorlanadi.',
+    contact_title:'Sanoat hamkorligini boshlaymiz',contact_text:'Texnik so‘rov, spetsifikatsiya, chizma yoki xarid talabini yuboring. Jamoamiz sizning talablaringizga mos tijorat taklifini tayyorlaydi.',contact_email_label:'Email',contact_direction_label:'Yo‘nalish',contact_direction:'Sanoat uskunalari · Metall mahsulotlari · Komponentlar',contact_since_label:'Faoliyat boshlangan yil',footer_left:'© 2003–2026 Golden Green Group. Barcha huquqlar himoyalangan.',footer_right:'Sanoat ta’minoti · Tekstil uskunalari · Metall yechimlar'
+  }
+};
+function setLanguage(lang){
+  document.documentElement.lang=lang;
+  localStorage.setItem('ggg_lang',lang);
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key=el.getAttribute('data-i18n');
+    if(translations[lang]&&translations[lang][key]) el.textContent=translations[lang][key];
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn=>btn.classList.remove('active'));
+  const active=[...document.querySelectorAll('.lang-btn')].find(btn=>btn.textContent.toLowerCase()===lang);
+  if(active) active.classList.add('active');
+  document.title=lang==='ru'?'Golden Green Group | Промышленные решения с 2003 года':lang==='uz'?'Golden Green Group | 2003-yildan beri sanoat yechimlari':'Golden Green Group | Industrial Solutions Since 2003';
+}
+setLanguage(localStorage.getItem('ggg_lang')||'en');
+</script>
+</body>
+</html>
